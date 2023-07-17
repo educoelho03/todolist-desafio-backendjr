@@ -36,6 +36,6 @@ class JavaJuniorApplicationTests {
 				.uri("/todos")
 				.bodyValue(new Todo("", "", false, 0))
 				.exchange()
-				.expectStatus().isBadRequest()
+				.expectStatus().isBadRequest();
 	}
 }
